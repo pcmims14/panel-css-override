@@ -1,23 +1,11 @@
-/* ROOM NAME (top‑left) – pull back from 8vh to 6vh */
-.room__container__room-details__name {
-  font-size: 6vh       !important;
-  color:     #FFFFFF   !important;
-}
-
-/* CURRENT TIME – 10vh for big but not enormous */
-.room__container__current-time {
-  font-size: 10vh      !important;
-  color:     #FFFFFF   !important;
-}
-
-/* PRIMARY STATUS (“Available”/“Reserved”) – 8vh */
-.room__container__status__title__label1 {
-  font-size: 8vh       !important;
-  color:     #FFFFFF   !important;
-}
-
-/* SECONDARY STATUS (“FOR THE REST…”) – 5vh */
-.room__container__status__title__label2 {
-  font-size: 5vh       !important;
-  color:     #FFFFFF   !important;
-}
+/* Current time and date */ 
+.room__container__current-time { 
+    font-family: Crestron,sans-serif; 
+    font-style: normal; 
+    line-height: .75em; 
+    font-size: 8vh; 
+    font-weight: 400; 
+    float: right; 
+    margin-right: 5vh; 
+    margin-top: 2.5vh; 
+} 
