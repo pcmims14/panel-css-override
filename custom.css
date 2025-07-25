@@ -1,49 +1,17 @@
 /* ───────────────────────────────────────────────────
-   1) SOLID BLACK BACKGROUND BEHIND EVERYTHING
+   UNIFORM 12pt BLUE TEXT OVERRIDE
 ─────────────────────────────────────────────────── */
-html,
+
+/* 1) Global catch‑all for every element */
 body,
-#root,
-.app__root,
-.room__container,
-.schedule-container,
-.scheduling-grid {
-  background-color: #000000 !important;
-}
-
-/* ───────────────────────────────────────────────────
-   2) FORCE ALL CHILD ELEMENTS TO TRANSPARENT BG + WHITE TEXT
-   ———————————————————————————————————————————————
-   Strips any nested whites, greens, etc.
-─────────────────────────────────────────────────── */
 body * {
-  background: transparent !important;
-  color:      #FFFFFF     !important;
-  font-size:  2rem        !important;  /* big, uniform text */
-  line-height:1.2         !important;
+  font-size: 12pt !important;
+  color:     #0451A5 !important;
 }
 
-/* ───────────────────────────────────────────────────
-   3) ROOM NAME (extra large white)
-─────────────────────────────────────────────────── */
-.room__container__room-details__name {
-  font-size:   8vmin      !important;
-  font-weight: normal     !important;
-  color:       #FFFFFF    !important;
-}
-
-/* ───────────────────────────────────────────────────
-   4) STATUS PILL (white text, black border)
-─────────────────────────────────────────────────── */
-.room__container__room-details__status,
-.room__container__room-details__status-text,
-.room__container__room-details__status--available,
-.room__container__room-details__status--occupied,
-.room__container__room-details__status--available:before,
-.room__container__room-details__status--occupied:before {
-  background: transparent       !important;
-  color:      #FFFFFF           !important;
-  border:     2px solid #FFFFFF !important;
-  font-size:  1.5rem            !important;
-  font-weight:bold              !important;
+/* 2) Also cover pseudo‑elements (if any) */
+body *::before,
+body *::after {
+  font-size: 12pt !important;
+  color:     #0451A5 !important;
 }
