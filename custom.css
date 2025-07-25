@@ -22,6 +22,6 @@
 
 /* 4) Secondary Status Label (“For Next…”) */
 .room__container__status__title__label2 {
-  font-size: 10vh       !important;  /* was ~3.3vh, now match scale */
+  font-size: 24vh       !important;  /* was ~3.3vh, now match scale */
   color:     #FFFFFF   !important;
 }
