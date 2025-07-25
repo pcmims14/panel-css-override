@@ -5,7 +5,7 @@
 /* 1) Global catch‑all for every element */
 body,
 body * {
-  font-size: 8pt !important;
+  font-size: 10pt !important;
   color:     #0451A5 !important;
 }
 
