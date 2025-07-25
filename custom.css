@@ -1,26 +1,19 @@
-/* ───────────────────────────────────────────────────
-   OVERRIDE: LARGE WHITE TEXT FOR HORIZONTAL ROOM
-─────────────────────────────────────────────────── */
 
-/* 1) Room Name (top‑left) */
 .room__container__room-details__name {
-  font-size: 24vh       !important;  /* was 4vh, now extra big */
+  font-size: 8vh       !important;  /* was 4vh, now extra big */
   color:     #FFFFFF   !important;  /* white */
 }
 
-/* 2) Current Time */
 .room__container__current-time {
-  font-size: 14vh       !important;  /* match room name */
+  font-size: 24vh       !important;  /* match room name */
   color:     #FFFFFF   !important;
 }
 
-/* 3) Primary Status Label (“Available”/“Reserved”) */
 .room__container__status__title__label1 {
-  font-size: 16vh      !important;  /* was 6vh, now bigger */
+  font-size: 6vh      !important;  /* was 6vh, now bigger */
   color:     #FFFFFF   !important;
 }
 
-/* 4) Secondary Status Label (“For Next…”) */
 .room__container__status__title__label2 {
   font-size: 6vh       !important;  /* was ~3.3vh, now match scale */
   color:     #FFFFFF   !important;
