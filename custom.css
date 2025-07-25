@@ -1,5 +1,5 @@
 /* ───────────────────────────────────────────────────
-   UNIFORM 12pt BLUE TEXT OVERRIDE
+   UNIFORM 10pt BLUE TEXT OVERRIDE
 ─────────────────────────────────────────────────── */
 
 /* 1) Global catch‑all for every element */
@@ -9,9 +9,9 @@ body * {
   color:     #0451A5 !important;
 }
 
-/* 2) Also cover pseudo‑elements (if any) */
+/* 2) Also cover pseudo‑elements */
 body *::before,
 body *::after {
-  font-size: 12pt !important;
+  font-size: 10pt !important;
   color:     #0451A5 !important;
 }
