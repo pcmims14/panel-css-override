@@ -11,3 +11,14 @@ html, body {
   font-weight: normal !important;
   color: #0451A5 !important;
 }
+
+.room__container__room-details__status,
+.room__container__room-details__status-text,
+.room__container__room-details__status--available {
+  color: #0451A5 !important;
+  background-color: #ffffff !important; /* if there’s a green background you need gone */
+}
+
+.room__container__room-details__name {
+  font-size: 6vmin !important;  /* bump from 4vmin to 6vmin */
+}
