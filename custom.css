@@ -1,51 +1,59 @@
 /* ───────────────────────────────────────────────────
-   GLOBAL BACKGROUND & TEXT
+   1) GLOBAL BACKGROUND, TEXT COLOR & BASE FONT SIZE
 ─────────────────────────────────────────────────── */
-html, body {
+html,
+body,
+#root,
+.app__root,
+.room__container,
+.schedule-container,
+.scheduling-grid {
   background-color: #A2A2A2 !important;  /* light grey */
-  color: #0451A5     !important;          /* blue text everywhere */
-  font-size: 1.2rem  !important;          /* bump base font size */
+  color:            #0451A5 !important;  /* blue text */
+  font-size:        1.2rem   !important;  /* bump base text size */
 }
 
 /* ───────────────────────────────────────────────────
-   ROOM NAME (top‑left corner)
+   2) ROOM NAME (top‑left corner)
 ─────────────────────────────────────────────────── */
 .room__container__room-details__name {
   font-family: "Crestron", sans-serif !important;
-  font-style: normal             !important;
-  line-height: 1em               !important;
-  font-size: 6vmin               !important;  /* larger than before */
-  font-weight: normal            !important;
-  color: #0451A5                 !important;
+  font-style:  normal               !important;
+  line-height: 1em                  !important;
+  font-size:   6vmin                !important;  /* extra big */
+  font-weight: normal               !important;
+  color:       #0451A5              !important;
 }
 
 /* ───────────────────────────────────────────────────
-   STATUS TEXT (Available/Occupied/etc)
+   3) STATUS TEXT (Available / Occupied / etc)
 ─────────────────────────────────────────────────── */
 .room__container__room-details__status,
 .room__container__room-details__status-text,
 .room__container__room-details__status--available,
 .room__container__room-details__status--occupied {
-  color: #0451A5       !important;
-  background: none     !important;  /* clear out any stock green */
-  font-size: 1.2em     !important;
+  background: none           !important;  /* clear any stock color */
+  color:      #0451A5        !important;  /* blue */
+  font-size:  1.3em          !important;  /* larger status text */
+  font-weight: bold          !important;
 }
 
 /* ───────────────────────────────────────────────────
-   SCHEDULING GRID ENTRIES
+   4) SCHEDULING GRID ENTRIES
 ─────────────────────────────────────────────────── */
 .scheduling-grid__cell,
 .schedule-grid__item,
 .day__time-block {
-  font-size: 3vmin   !important;  /* readable in the grid */
-  color: #0451A5     !important;
+  color:      #0451A5 !important;  /* blue */
+  font-size:  3vmin   !important;  /* easier to read */
+  line-height:1.2    !important;
 }
 
 /* ───────────────────────────────────────────────────
-   HEADERS, BUTTONS, & BODY TEXT
+   5) HEADERS, BUTTONS & OTHER TEXT ELEMENTS
 ─────────────────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6,
 p, span, div, button, label {
-  font-size: 1.2rem  !important;
-  color: #0451A5     !important;
+  color:      #0451A5 !important;  /* blue */
+  font-size:  1.2rem  !important;  /* consistent sizing */
 }
