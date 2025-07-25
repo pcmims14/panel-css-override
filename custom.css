@@ -2,7 +2,7 @@
    GLOBAL BACKGROUND & TEXT
 ─────────────────────────────────────────────────── */
 html, body {
-  background-color: #f0f0f0 !important;  /* light grey */
+  background-color: #A2A2A2 !important;  /* light grey */
   color: #0451A5     !important;          /* blue text everywhere */
   font-size: 1.2rem  !important;          /* bump base font size */
 }
