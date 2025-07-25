@@ -1,17 +1,27 @@
 /* ───────────────────────────────────────────────────
-   UNIFORM 10pt BLUE TEXT OVERRIDE
+   OVERRIDE: LARGE WHITE TEXT FOR HORIZONTAL ROOM
 ─────────────────────────────────────────────────── */
 
-/* 1) Global catch‑all for every element */
-body,
-body * {
-  font-size: 12pt !important;
-  color:     #F5F5F5 !important;
+/* 1) Room Name (top‑left) */
+.room__container__room-details__name {
+  font-size: 8vh       !important;  /* was 4vh, now extra big */
+  color:     #FFFFFF   !important;  /* white */
 }
 
-/* 2) Also cover pseudo‑elements */
-body *::before,
-body *::after {
-  font-size: 10pt !important;
-  color:     #0451A5 !important;
+/* 2) Current Time */
+.room__container__current-time {
+  font-size: 8vh       !important;  /* match room name */
+  color:     #FFFFFF   !important;
+}
+
+/* 3) Primary Status Label (“Available”/“Reserved”) */
+.room__container__status__title__label1 {
+  font-size: 10vh      !important;  /* was 6vh, now bigger */
+  color:     #FFFFFF   !important;
+}
+
+/* 4) Secondary Status Label (“For Next…”) */
+.room__container__status__title__label2 {
+  font-size: 6vh       !important;  /* was ~3.3vh, now match scale */
+  color:     #FFFFFF   !important;
 }
