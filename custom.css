@@ -1,24 +1,51 @@
+/* ───────────────────────────────────────────────────
+   GLOBAL BACKGROUND & TEXT
+─────────────────────────────────────────────────── */
 html, body {
-  background-color: #ffffff !important;
-  color: #0451A5 !important;
+  background-color: #f0f0f0 !important;  /* light grey */
+  color: #0451A5     !important;          /* blue text everywhere */
+  font-size: 1.2rem  !important;          /* bump base font size */
 }
 
+/* ───────────────────────────────────────────────────
+   ROOM NAME (top‑left corner)
+─────────────────────────────────────────────────── */
 .room__container__room-details__name {
   font-family: "Crestron", sans-serif !important;
-  font-style: normal !important;
-  line-height: 0.75em !important;
-  font-size: 4vmin !important;
-  font-weight: normal !important;
-  color: #0451A5 !important;
+  font-style: normal             !important;
+  line-height: 1em               !important;
+  font-size: 6vmin               !important;  /* larger than before */
+  font-weight: normal            !important;
+  color: #0451A5                 !important;
 }
 
+/* ───────────────────────────────────────────────────
+   STATUS TEXT (Available/Occupied/etc)
+─────────────────────────────────────────────────── */
 .room__container__room-details__status,
 .room__container__room-details__status-text,
-.room__container__room-details__status--available {
-  color: #0451A5 !important;
-  background-color: #ffffff !important; /* if there’s a green background you need gone */
+.room__container__room-details__status--available,
+.room__container__room-details__status--occupied {
+  color: #0451A5       !important;
+  background: none     !important;  /* clear out any stock green */
+  font-size: 1.2em     !important;
 }
 
-.room__container__room-details__name {
-  font-size: 6vmin !important;  /* bump from 4vmin to 6vmin */
+/* ───────────────────────────────────────────────────
+   SCHEDULING GRID ENTRIES
+─────────────────────────────────────────────────── */
+.scheduling-grid__cell,
+.schedule-grid__item,
+.day__time-block {
+  font-size: 3vmin   !important;  /* readable in the grid */
+  color: #0451A5     !important;
+}
+
+/* ───────────────────────────────────────────────────
+   HEADERS, BUTTONS, & BODY TEXT
+─────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+p, span, div, button, label {
+  font-size: 1.2rem  !important;
+  color: #0451A5     !important;
 }
