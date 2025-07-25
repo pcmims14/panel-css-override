@@ -1,52 +1,49 @@
 /* ───────────────────────────────────────────────────
-   1) BASE GREY BACKGROUND
+   1) SOLID BLACK BACKGROUND BEHIND EVERYTHING
 ─────────────────────────────────────────────────── */
-html, body {
-  background-color: #A2A2A2 !important;  /* solid grey behind everything */
+html,
+body,
+#root,
+.app__root,
+.room__container,
+.schedule-container,
+.scheduling-grid {
+  background-color: #000000 !important;
 }
 
 /* ───────────────────────────────────────────────────
-   2) CLEAR ALL CHILD BACKGROUNDS & SET TEXT SIZE/COLOR
+   2) FORCE ALL CHILD ELEMENTS TO TRANSPARENT BG + WHITE TEXT
+   ———————————————————————————————————————————————
+   Strips any nested whites, greens, etc.
 ─────────────────────────────────────────────────── */
 body * {
-  background: transparent !important;      /* strip any nested white/black */
-  color:      #0451A5      !important;     /* your blue everywhere */
-  font-size:  1.5rem       !important;     /* large, uniform text */
-  line-height:1.2          !important;
+  background: transparent !important;
+  color:      #FFFFFF     !important;
+  font-size:  2rem        !important;  /* big, uniform text */
+  line-height:1.2         !important;
 }
 
 /* ───────────────────────────────────────────────────
-   3) GRID CELLS & TIME BLOCKS: WHITE BG FOR READABILITY
-─────────────────────────────────────────────────── */
-.scheduling-grid__cell,
-.schedule-grid__item,
-.day__time-block {
-  background-color: #ffffff !important;    /* restore white grid cells */
-  padding:        0.5em     !important;    /* add breathing room */
-  border-radius:  0.25em    !important;
-}
-
-/* ───────────────────────────────────────────────────
-   4) ROOM NAME (TOP‑LEFT): EXTRA BIG
+   3) ROOM NAME (extra large white)
 ─────────────────────────────────────────────────── */
 .room__container__room-details__name {
-  font-size:   8vmin    !important;         /* extra large room name */
-  line-height: 1em      !important;
-  font-weight: normal   !important;
+  font-size:   8vmin      !important;
+  font-weight: normal     !important;
+  color:       #FFFFFF    !important;
 }
 
 /* ───────────────────────────────────────────────────
-   5) STATUS PILL: WHITE BG + BLUE BORDER & TEXT
+   4) STATUS PILL (white text, black border)
 ─────────────────────────────────────────────────── */
 .room__container__room-details__status,
 .room__container__room-details__status-text,
 .room__container__room-details__status--available,
-.room__container__room-details__status--occupied {
-  background-color: #ffffff         !important;
-  color:            #0451A5         !important;
-  border:           2px solid #0451A5 !important;
-  padding:          0.25em 0.5em     !important;
-  font-size:        1.3rem           !important;
-  border-radius:    0.25em           !important;
-  font-weight:      bold             !important;
+.room__container__room-details__status--occupied,
+.room__container__room-details__status--available:before,
+.room__container__room-details__status--occupied:before {
+  background: transparent       !important;
+  color:      #FFFFFF           !important;
+  border:     2px solid #FFFFFF !important;
+  font-size:  1.5rem            !important;
+  font-weight:bold              !important;
 }
