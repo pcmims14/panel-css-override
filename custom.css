@@ -4,7 +4,7 @@
 
 /* 1) Room Name (top‑left) */
 .room__container__room-details__name {
-  font-size: 12vh       !important;  /* was 4vh, now extra big */
+  font-size: 24vh       !important;  /* was 4vh, now extra big */
   color:     #FFFFFF   !important;  /* white */
 }
 
